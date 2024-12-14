@@ -8,7 +8,7 @@ import pandas as pd
 class PaysokoStreamlitApp:
     def __init__(self):
         self.qa = PaysokoQA()
-        self.logger = QALogger()
+        self.logger = QALogger("./qa_logs.csv")
 
     def initialize_session_state(self):
         if 'messages' not in st.session_state:
