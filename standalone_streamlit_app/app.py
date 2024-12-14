@@ -3,6 +3,10 @@ import time
 from qa_chatbot import PaysokoQA
 from qa_logger import QALogger
 import pandas as pd
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+image_path = os.path.join(current_dir, "images", "paysoko_chatbot.png")
 
 
 class PaysokoStreamlitApp:
@@ -58,7 +62,7 @@ class PaysokoStreamlitApp:
             if message["role"] == "user":
                 st.write(f"👤 You: {message['content']}")
             else:
-                with st.chat_message("assistant", avatar="./images/paysoko_chatbot.png"):
+                with st.chat_message("assistant", avatar=str(image_path)):
                     st.markdown(message["content"])
 
         # Optional: Display loading indicator if in loading state
