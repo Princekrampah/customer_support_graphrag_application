@@ -1,0 +1,9 @@
+service_id,service_name,description,cost_ksh,duration_minutes
+PS001,Money Transfer,"Domestic money transfer between bank accounts and mobile wallets",150,15
+PS002,Bill Payment,"Payment of utility bills including electricity water and internet",100,10
+PS003,International Remittance,"International money transfer services to various countries",500,20
+PS004,Business Payments,"B2B payment solutions and bulk payment processing",300,25
+PS005,Mobile Top-up,"Airtime and data bundle purchase for all major networks",50,5
+PS006,Government Payments,"Processing of government fees licenses and permits",200,30
+PS007,School Fee Payment,"Educational institution fee payment processing",150,15
+PS008,Merchant Services,"POS and payment gateway solutions for businesses",1000,45
